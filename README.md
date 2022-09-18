@@ -114,4 +114,14 @@
    git stash pop
   ```
   
-### 
+### 丢弃本地未提交的变化
+- ```
+  # one commit  
+  git reset --hard HEAD^
+  # two commits
+  git reset --hard HEAD^^
+  # four commits
+  git reset --hard HEAD~4
+  # or
+  git checkout -f
+  ```
