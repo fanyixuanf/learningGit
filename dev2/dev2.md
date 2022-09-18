@@ -6,3 +6,8 @@
       - ``` 6be641e (HEAD -> dev2, origin/dev2) HEAD@{0}: checkout: moving from dev to dev2 ```
     - ```  git reset --hard 6be641e ```
     - ```  git reset --hard HEAD@{0} ```
+
+- 测试stash文件中的部分内容 -- 开始
+- 存stash中
+- 要提交的
+- 测试stash文件中的部分内容 -- 结束

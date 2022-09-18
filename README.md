@@ -36,6 +36,59 @@
 ### 从一个提交里移除一个文件
 - ``` 
   git checkout HEAD^ dev2/dev2.md
-  
+  git add -A
+  git commit -m ""
+  git push origin dev
+  ```
+- ``` 
+  git checkout HEAD^ dev2/dev2.md
+  git add -A
+  git commit --amend 
+  git push origin dev
   ```
 
+### 删除最后一次提交
+- 已push
+  - 不到万不得已的时候不要这么做
+  ```
+     git reset HEAD^ --hard 
+     git push -f
+  ```
+  - 推荐
+  ``` 
+  git revert SHA of commitid
+  ```
+- 未push
+  - ```
+    git reset --soft HEAD@{1} 
+    ```
+### 删除任意提交
+- 不到万不得已的时候不要这么做
+  - ``` 
+    git rebase --onto SHA_OF_BAD_COMMIT^ SHA_OF_BAD_COMMIT  
+    git push -f   
+    ```
+- 推荐
+  - ``` git revert SHA of commitid ```
+
+### 尝试push一个修正后的提交(amended commit)到远程，但是报错：
+- *要避免强推*
+- ``` 
+  To github.com:fanyixuanf/learningGit.git
+  ! [rejected]        dev -> dev (non-fast-forward)
+  error: failed to push some refs to 'github.com:fanyixuanf/learningGit.git'
+  hint: Updates were rejected because the tip of your current branch is behind
+  hint: its remote counterpart. Integrate the remote changes (e.g.
+  hint: 'git pull ...') before pushing again.
+  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  ```
+  - ``` git push origin dev -f ``` or ``` git push origin mybranch --force  ```
+
+### 做了一次hard reset后，想找回这次提交
+- ``` 
+  git reflog
+  git reset --hard SHA1234
+  ```
+
+### 暂存文件的一部分，而不是这个文件的全部
+- ```  git add --patch filename.x  ``` or ``` git add -p filename.x ```
