@@ -90,9 +90,9 @@
   git reset --hard SHA1234
   ```
 
-### 暂存文件的一部分，而不是这个文件的全部
+### 提交文件的一部分，而不是这个文件的全部
 - ```  git add --patch filename.x  ``` or ``` git add -p filename.x ```
 - ``` git add -N filename.x ```
-
-### 把在一个文件里的变化加到两个提交里
 - ``` git add -p ```
+
+
