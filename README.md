@@ -125,3 +125,15 @@
   # or
   git checkout -f
   ```
+
+### 丢弃某些未暂存的内容
+- ``` git checkout -p
+  git checkout -p
+  # or
+  git stash -p
+  git reset --hard
+  git stash pop
+  # or
+  git stash -p
+  git stash drop
+  ```
