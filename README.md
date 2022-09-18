@@ -95,3 +95,4 @@
 - ``` git add -N filename.x ```
 
 ### 把在一个文件里的变化加到两个提交里
+- ``` git add -p ```
