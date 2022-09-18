@@ -105,5 +105,13 @@
   ```
 
 ### 把未暂存的内容移动到一个新分支
+- ``` git checkout -b dev1 ```
 
-
+### 把未暂存的内容移动到另一个已存在的分支
+- ```
+   git stash  
+   git checkout dev
+   git stash pop
+  ```
+  
+### 
