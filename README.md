@@ -17,3 +17,14 @@
         - ``` 6be641e (HEAD -> dev2, origin/dev2) HEAD@{0}: checkout: moving from dev to dev2 ```
     - ```  git reset --hard 6be641e ```
     - ```  git reset --hard HEAD@{0} ```
+
+### 显示当前 ```HEAD```上的最近一次的提交(commit)
+- ``` git show ```
+- ``` git log -n1 -p  ```
+
+### 修改提交信息commit message
+- 未push
+  - ``` git commit --amend --only ```
+- 已push
+  - 修改commit message后 ```force push```
+
