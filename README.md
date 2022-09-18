@@ -30,7 +30,7 @@
 |  git checkout   |              |                  |        git push        |
 | git checkout -b |              |                  |        git tag         |
 
-### 克隆所有子
+### 克隆所有
 - ```  git clone --recursive git@github.com:fanyixuanf/learningGit.git```
 - ``` git submodule update --init --recursive  ```
 
