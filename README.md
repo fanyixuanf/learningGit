@@ -34,5 +34,8 @@
 - ``` git commit --amend --author "schadenfreude <schadenfreudef@gmail.com>" ```
 
 ### 从一个提交里移除一个文件
-- 
+- ``` 
+  git checkout HEAD^ dev2/dev2.md
+  
+  ```
 
