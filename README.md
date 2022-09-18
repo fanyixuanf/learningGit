@@ -18,6 +18,14 @@
     - ```  git reset --hard 6be641e ```
     - ```  git reset --hard HEAD@{0} ```
 
+### 关联远程分支
+- ``` 
+  //可以先通过下面命令刷新远端分支列表
+  git remote update origin --prune
+  //更换关联的远端分支
+  git branch --set-upstream-to=origin/dev dev
+  ```
+  
 ### 显示当前 ```HEAD```上的最近一次的提交(commit)
 - ``` git show ```
 - ``` git log -n1 -p  ```
