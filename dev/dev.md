@@ -1,3 +1,3 @@
 ## dev
 
-- ``` git checkout dev origin/main ```
+- ``` git checkout -b dev origin/main ```
