@@ -95,4 +95,15 @@
 - ``` git add -N filename.x ```
 - ``` git add -p ```
 
+### 把暂存的内容变成未暂存，把未暂存的内容暂存起来
+- ``` 
+   git commit -m "WIP"  
+   git add .  
+   git stash  
+   git reset HEAD^  
+   git stash pop --index 0
+  ```
+
+### 把未暂存的内容移动到一个新分支
+
 
