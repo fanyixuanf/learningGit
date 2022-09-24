@@ -143,6 +143,7 @@
   - 修改commit message后 ```force push```
     - ``` git commit --amend --only ```
     - ``` git push origin dev --force ```
+    - ``` git push --force-with-lease origin dev ```
     
 ### 单次提交里的用户名和邮箱不对
 - ``` git commit --amend --author "schadenfreude <schadenfreudef@gmail.com>" ```
