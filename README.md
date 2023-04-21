@@ -362,3 +362,6 @@
 - 把远端分支的变更拉到本地，且 merge 到本地分支``` git pull origin 分支名 ```
 - 将本地分支 push 到远端``` git push origin 分支名 ```
 - 删除远端分支``` git push remote --delete 远端分支名 ```or```git push remote :远端分支名```
+
+### git-flow
+- [git-flow](git-flow.md)
