@@ -8,6 +8,12 @@
 - ``` git config --local user.name "your name" ```
 - ``` git config --local user.email "your email" ```
 
+### 不需要「git push origin xxx」，只要「git push」，2）再也不会遇到「no upstream branch」的报错，也不需要「git push --set-upstream origin test && git push」。因为我们执行 git push 的大部分场景都是 push 到同名的 remote branch
+```bash
+git config --global --add push.default current
+git config --global --add push.autoSetupRemote true
+```
+
 ### 删除配置信息
 - ``` git config --unset --global 要删除的配置项 ```
 - ``` git config --unset --local 要删除的配置项 ```
